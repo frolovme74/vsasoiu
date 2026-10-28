@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.1.0dev" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.1.0dev(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="west"/>
+      <a name="value" val="0x0"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9">
+    <tool name="Text Tool">
+      <a name="text" val="Шаг"/>
+    </tool>
+  </lib>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="alu_74381_lib"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings/>
+  <toolbar/>
+  <circuit name="alu_74381_lib">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="alu_74381_lib"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="8.0"/>
+    <appear>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="94" y="220">74381</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="149">B2</text>
+      <polyline fill="none" points="50,100 75,100" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="94" y="63">ALU</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="220">S2</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="140">A2</text>
+      <polyline fill="none" points="115,50 114,231" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="110">A1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="129" y="80">F0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="180">B3</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="129" y="189">P</text>
+      <polyline fill="none" points="50,160 74,160" stroke="#000000"/>
+      <polyline fill="none" points="75,50 74,232" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="129" y="210">G</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="119">B1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="129" y="170">F3</text>
+      <rect fill="none" height="182" stroke="#000000" width="90" x="50" y="50"/>
+      <polyline fill="none" points="50,190 74,190" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="129" y="140">F2</text>
+      <ellipse cx="140" cy="190" fill="none" rx="4" ry="4" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="60" y="60">Cn</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="171">A3</text>
+      <polyline fill="none" points="51,70 75,70" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="90">B0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="210">S1</text>
+      <polyline fill="none" points="50,130 74,130" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="129" y="109">F1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="79">A0</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="7" text-anchor="middle" x="63" y="200">S0</text>
+      <ellipse cx="140" cy="210" fill="none" rx="4" ry="4" stroke="#000000"/>
+      <visible-led height="10" path="/LED(400,150)" stroke-width="0" width="10" x="65" y="55"/>
+      <visible-led height="10" path="/LED(600,200)" stroke-width="0" width="10" x="115" y="183"/>
+      <visible-led height="10" path="/LED(600,240)" stroke-width="0" width="10" x="115" y="205"/>
+      <circ-anchor facing="east" x="140" y="80"/>
+      <circ-port dir="in" pin="190,160" x="50" y="60"/>
+      <circ-port dir="in" pin="190,210" x="50" y="80"/>
+      <circ-port dir="in" pin="190,230" x="50" y="110"/>
+      <circ-port dir="in" pin="190,250" x="50" y="140"/>
+      <circ-port dir="in" pin="190,270" x="50" y="170"/>
+      <circ-port dir="in" pin="190,400" x="50" y="90"/>
+      <circ-port dir="in" pin="190,420" x="50" y="120"/>
+      <circ-port dir="in" pin="190,440" x="50" y="150"/>
+      <circ-port dir="in" pin="190,460" x="50" y="180"/>
+      <circ-port dir="in" pin="190,500" x="50" y="200"/>
+      <circ-port dir="in" pin="190,520" x="50" y="210"/>
+      <circ-port dir="in" pin="190,540" x="50" y="220"/>
+      <circ-port dir="out" pin="640,210" x="140" y="190"/>
+      <circ-port dir="out" pin="640,250" x="140" y="210"/>
+      <circ-port dir="out" pin="640,300" x="140" y="80"/>
+      <circ-port dir="out" pin="640,320" x="140" y="110"/>
+      <circ-port dir="out" pin="640,340" x="140" y="140"/>
+      <circ-port dir="out" pin="640,360" x="140" y="170"/>
+    </appear>
+    <comp lib="0" loc="(190,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cn"/>
+    </comp>
+    <comp lib="0" loc="(190,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A0"/>
+    </comp>
+    <comp lib="0" loc="(190,230)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A1"/>
+    </comp>
+    <comp lib="0" loc="(190,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A2"/>
+    </comp>
+    <comp lib="0" loc="(190,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A3"/>
+    </comp>
+    <comp lib="0" loc="(190,400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B0"/>
+    </comp>
+    <comp lib="0" loc="(190,420)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(190,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="0" loc="(190,460)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B3"/>
+    </comp>
+    <comp lib="0" loc="(190,500)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(190,520)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(190,540)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S2"/>
+    </comp>
+    <comp lib="0" loc="(640,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="nP"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(640,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="nG"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(640,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="F0"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(640,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="F1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(640,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="F2"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(640,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="F3"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="6" loc="(400,150)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="label" val="LCi"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="6" loc="(600,200)" name="LED">
+      <a name="active" val="false"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Lnp"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="6" loc="(600,240)" name="LED">
+      <a name="active" val="false"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Lng"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(340,340)" name="74381">
+      <a name="ShowInternalStructure" val="true"/>
+    </comp>
+    <wire from="(190,160)" to="(400,160)"/>
+    <wire from="(190,210)" to="(310,210)"/>
+    <wire from="(190,230)" to="(330,230)"/>
+    <wire from="(190,250)" to="(370,250)"/>
+    <wire from="(190,270)" to="(410,270)"/>
+    <wire from="(190,400)" to="(410,400)"/>
+    <wire from="(190,420)" to="(370,420)"/>
+    <wire from="(190,440)" to="(290,440)"/>
+    <wire from="(190,460)" to="(270,460)"/>
+    <wire from="(190,500)" to="(430,500)"/>
+    <wire from="(190,520)" to="(450,520)"/>
+    <wire from="(190,540)" to="(470,540)"/>
+    <wire from="(270,280)" to="(270,460)"/>
+    <wire from="(270,280)" to="(430,280)"/>
+    <wire from="(290,290)" to="(290,440)"/>
+    <wire from="(290,290)" to="(390,290)"/>
+    <wire from="(310,210)" to="(310,390)"/>
+    <wire from="(310,390)" to="(390,390)"/>
+    <wire from="(330,230)" to="(330,380)"/>
+    <wire from="(330,380)" to="(350,380)"/>
+    <wire from="(350,370)" to="(350,380)"/>
+    <wire from="(370,250)" to="(370,310)"/>
+    <wire from="(370,370)" to="(370,420)"/>
+    <wire from="(390,290)" to="(390,310)"/>
+    <wire from="(390,370)" to="(390,390)"/>
+    <wire from="(400,150)" to="(400,160)"/>
+    <wire from="(400,160)" to="(450,160)"/>
+    <wire from="(410,270)" to="(410,310)"/>
+    <wire from="(410,370)" to="(410,400)"/>
+    <wire from="(430,280)" to="(430,310)"/>
+    <wire from="(430,370)" to="(430,500)"/>
+    <wire from="(450,160)" to="(450,310)"/>
+    <wire from="(450,370)" to="(450,520)"/>
+    <wire from="(470,210)" to="(470,310)"/>
+    <wire from="(470,210)" to="(600,210)"/>
+    <wire from="(470,370)" to="(470,540)"/>
+    <wire from="(490,250)" to="(490,310)"/>
+    <wire from="(490,250)" to="(600,250)"/>
+    <wire from="(490,370)" to="(490,410)"/>
+    <wire from="(490,410)" to="(570,410)"/>
+    <wire from="(510,270)" to="(510,310)"/>
+    <wire from="(510,270)" to="(550,270)"/>
+    <wire from="(510,370)" to="(510,400)"/>
+    <wire from="(510,400)" to="(600,400)"/>
+    <wire from="(530,280)" to="(530,310)"/>
+    <wire from="(530,280)" to="(620,280)"/>
+    <wire from="(550,270)" to="(550,360)"/>
+    <wire from="(550,360)" to="(640,360)"/>
+    <wire from="(570,300)" to="(570,410)"/>
+    <wire from="(570,300)" to="(640,300)"/>
+    <wire from="(600,200)" to="(600,210)"/>
+    <wire from="(600,210)" to="(640,210)"/>
+    <wire from="(600,240)" to="(600,250)"/>
+    <wire from="(600,250)" to="(640,250)"/>
+    <wire from="(600,320)" to="(600,400)"/>
+    <wire from="(600,320)" to="(640,320)"/>
+    <wire from="(620,280)" to="(620,340)"/>
+    <wire from="(620,340)" to="(640,340)"/>
+  </circuit>
+</project>
